@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-// puppeteer-core should not install anything.
-if (require('./package.json').name === 'puppeteer-core')
+// puppeteer-core-verso should not install anything.
+if (require('./package.json').name === 'puppeteer-core-verso')
   return;
 
 buildNode6IfNecessary();

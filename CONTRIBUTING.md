@@ -221,9 +221,9 @@ Releasing to NPM consists of 3 phases:
         - **WHY**: this is to avoid bundling unnecessary files to NPM package
     3. Run [`pkgfiles`](https://www.npmjs.com/package/pkgfiles) to make sure you don't publish anything unnecessary.
     4. Run `npm publish`. This will publish `puppeteer` package.
-3. Publish `puppeteer-core` to NPM.
-    1. Run `./utils/prepare_puppeteer_core.js`. The script will change the name inside `package.json` to `puppeteer-core`.
-    2. Run `npm publish`. This will publish `puppeteer-core` package.
+3. Publish `puppeteer-core-verso` to NPM.
+    1. Run `./utils/prepare_puppeteer_core.js`. The script will change the name inside `package.json` to `puppeteer-core-verso`.
+    2. Run `npm publish`. This will publish `puppeteer-core-verso` package.
     3. Run `git reset --hard` to reset the changes to `package.json`.
 4. Source Code: mark post-release.
     1. Bump `package.json` version to `-post` version and send a PR titled `'chore: bump version to vXXX.YYY.ZZZ-post'` ([example](https://github.com/GoogleChrome/puppeteer/commit/d02440d1eac98028e29f4e1cf55413062a259156))

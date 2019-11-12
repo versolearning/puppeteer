@@ -21,5 +21,5 @@ const path = require('path');
 const packagePath = path.join(__dirname, '..', 'package.json');
 const json = require(packagePath);
 
-json.name = 'puppeteer-core';
+json.name = 'puppeteer-core-verso';
 fs.writeFileSync(packagePath, JSON.stringify(json, null, '  '));
